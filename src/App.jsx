@@ -1,17 +1,17 @@
 import './App.css'
 import { Header } from './Components/Header'
-import UserPage from './Pages/UserPage'
+
 import { Footer } from './Components/Footer'
-import AdminLogin from './Pages/AdminLogin'
-import Department from './Pages/Department'
+import { Outlet } from 'react-router-dom'
+import { SuccessfullToast } from './Components/SuccessfullToast'
+
 function App() {
 
   return (
     <>
     <Header />
-    {/* <AdminLogin /> */}
-    <Department />
-    {/* <UserPage /> */}
+    <SuccessfullToast />
+    <Outlet />
     <Footer />
     </>
   )

@@ -11,14 +11,16 @@ import UserPage from './Pages/UserPage';
 import AdminPage from './Pages/AdminPage';
 import Department from './Pages/Department';
 import AdminLogin from './Pages/AdminLogin'
+import Notfound from './Pages/Notfound';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
     children: [
+      
       {
-        path: "/",
+        path: "/userpage",
         element: <UserPage />, 
       }, 
       {
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/department",
         element: <Department />,
+      },
+      {
+        path:"/*",
+        element:<Notfound />
       },
 
     ]
