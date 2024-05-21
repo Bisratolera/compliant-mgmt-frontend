@@ -1,8 +1,11 @@
+import { DepartmentPannel } from "../Components/DepartmentPannel"
 
 
 const Department = () => {
   return (
-    <div>Department</div>
+    <div>
+      <DepartmentPannel />
+    </div>
   )
 }
 

@@ -4,11 +4,12 @@
   --bgcolor:#0E1124;
   --text-fade:#7A7878;
   --text-color:#fff;
+  --card-color:#FFD600;
   --text-font:"Source Sans 3", sans-serif;
 }
 body{
   font-family: "Goldman", sans-serif;
-  background: var(--bgcolor);
+  /* background: var(--bgcolor); */
 }
 
 .goldman-regular {

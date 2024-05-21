@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
 
 export const Form = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -13,14 +12,8 @@ export const Form = () => {
   };
 
   return (
-    <div className="login flex flex-col items-center ">
-      <div className="card mt-10 sticky justify-center gap-4 flex mb-16">
-        <img className="h-10 w-auto" src={logo} alt="" />
-        <p className="text-2xl text-[--text-color]">
-          Microlink Compliant Portal
-        </p>
-      </div>
-      <form onSubmit={handleSubmit} className="w-96 font-sans">
+    <div className="login flex flex-col items-center">
+      <form onSubmit={handleSubmit} className="w-full md:w-96 font-sans">
         <div className="flex flex-col text-[--bg-color] mb-2">
           <select
             id="selectOption"
@@ -39,8 +32,9 @@ export const Form = () => {
         </div>
         <div className="flex flex-col mb-2">
           <textarea
+            required
             id="message"
-            placeholder="message"
+            placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="border border-gray-300 p-2 rounded-md"
@@ -50,8 +44,9 @@ export const Form = () => {
         <div className="flex flex-col mb-2 text-white">
           <label htmlFor="email"></label>
           <input
+            required
             type="email"
-            placeholder="email"
+            placeholder="Email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -61,7 +56,7 @@ export const Form = () => {
         <div className="flex flex-col mb-4 text-[--bg-color] text-center">
           <label
             htmlFor="file"
-            className="bg-[#FFFF] text-[--bg-color] py-2 px-4 rounded-md cursor-pointer"
+            className="bg-[#FFFF] text-[--bg-color] py-2 px-4 rounded-md border-[2px] cursor-pointer"
           >
             Attach File
             <input
@@ -74,7 +69,7 @@ export const Form = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#FFFF00] text-[--bg-color] py-2 px-4 w-96 rounded-md"
+          className="bg-[#ffcb3b] text-[--bg-color] py-2 px-4 w-full md:w-96 rounded-md mb-4"
         >
           Submit
         </button>
