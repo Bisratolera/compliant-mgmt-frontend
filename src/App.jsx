@@ -1,20 +1,15 @@
-import './App.css'
-import { Header } from './Components/Header'
 
-import { Footer } from './Components/Footer'
-import { Outlet } from 'react-router-dom'
-import { SuccessfullToast } from './Components/SuccessfullToast'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import AdminLogin from "./Pages/AdminLogin";
 
 function App() {
-
   return (
-    <>
-    <Header />
-    <SuccessfullToast />
-    <Outlet />
-    <Footer />
-    </>
-  )
+    <div className="app">
+      <AdminLogin/>
+      <Outlet />
+    </div>
+  );
 }
 
-export default App
+export default App;

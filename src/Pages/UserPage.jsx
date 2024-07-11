@@ -1,11 +1,11 @@
-import {Form} from '../Components/Form'
+import { Form } from '../Components/Form';
 
 const UserPage = () => {
   return (
-    <>
-    <Form />
-    </>
-  )
-}
+    <div>
+      <Form />
+    </div>
+  );
+};
 
-export default UserPage
+export default UserPage;

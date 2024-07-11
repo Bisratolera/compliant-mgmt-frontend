@@ -1,12 +1,9 @@
-import { DepartmentPannel } from "../Components/DepartmentPannel"
 
 
 const Department = () => {
   return (
-    <div>
-      <DepartmentPannel />
-    </div>
-  )
-}
+    <div>Department</div>
+  );
+};
 
-export default Department
+export default Department;

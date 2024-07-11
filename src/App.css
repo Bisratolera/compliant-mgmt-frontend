@@ -24,3 +24,15 @@ body{
   font-style: normal;
 }
 
+.not-found-container {
+  background: radial-gradient(circle at top, #ff9a9e, #fad0c4, #fad0c4, #fad0c4);
+  animation: backgroundChange 10s infinite;
+}
+
+@keyframes backgroundChange {
+  0% { background: radial-gradient(circle at top, #ff9a9e, #fad0c4); }
+  25% { background: radial-gradient(circle at top, #fad0c4, #ff9a9e); }
+  50% { background: radial-gradient(circle at top, #fad0c4, #ff9a9e); }
+  75% { background: radial-gradient(circle at top, #ff9a9e, #fad0c4); }
+  100% { background: radial-gradient(circle at top, #ff9a9e, #fad0c4); }
+}
