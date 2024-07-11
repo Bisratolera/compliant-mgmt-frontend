@@ -46,12 +46,12 @@ export const Login = () => {
           </div>
           <button type="submit" className="w-full bg-[#ffcb3b] py-2 rounded-md">Login</button>
         </form>
-        <div className="flex justify-between items-center mt-4">
+        <div className="flex justify-between gap-5 items-center mt-4">
           <button onClick={toggleRole} className="bg-[#ffcb3b] p-2 rounded-md">
             {selectedRole === 'department' ? 'Switch to Admin' : 'Switch to Department'}
           </button>
-          <Link to="/userpage">
-            <button className="bg-[#b888ff] p-2 rounded-md">Go to Form Page</button>
+          <Link to="/Userpage">
+            <button className="bg-[#346099] p-2 rounded-md">Go to Form Page</button>
           </Link>
         </div>
       </div>
